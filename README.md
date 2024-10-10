@@ -13,3 +13,20 @@ Verify installation via the following command, the cloned plugin directory shoul
 pyenv hooks uninstall
 ```
 
+## example
+Try to uninstall a python version which is globally defined in `$(pyenv root)/version`, e.g.:
+
+```bash
+pyenv install 3.12.4
+pyenv global 3.12.4
+pyenv uninstall 3.12.4
+```
+
+Output will look like:
+
+```
+pyenv: remove /home/ramon/.pyenv/versions/3.12.4? [y|N] y
+pyenv: 3.12.4 uninstalled
+pyenv-uninstall-global plugin: 3.12.4 was the pyenv global version
+pyenv-uninstall-global plugin: removing the /home/ramon/.pyenv/version file
+```
