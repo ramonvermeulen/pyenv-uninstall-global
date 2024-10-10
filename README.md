@@ -1,4 +1,6 @@
 # pyenv-uninstall-global
+See issue: https://github.com/pyenv/pyenv/issues/3074
+
 Removes the pyenv version file (`$(pyenv root)/version`) when you try to uninstall the globally selected pyenv version.
 
 ## installation
